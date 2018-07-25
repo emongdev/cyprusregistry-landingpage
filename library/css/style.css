@@ -1,5 +1,4 @@
 .wizard {
-    margin: 20px auto;
     background: #fff;
 	width: 100%;
 }
@@ -8,8 +7,7 @@
         position: relative;
         margin: 40px auto;
         margin-bottom: 0;
-        border-bottom-color: #e0e0e0;
-		padding-bottom: 30px;
+    
     }
 
     .wizard > div.wizard-inner {
@@ -39,8 +37,6 @@
 .wizard .nav-tabs .nav-item.show .nav-link, .wizard .nav-tabs .nav-link.active{
 	color: #fff;
     background-color: #0062cc;
-    border-color: #005cbf;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
 }
 
 
@@ -102,13 +98,7 @@ span.round-tab:hover {
     border-bottom-color: #5bc0de;
 }
 
-
-
-.wizard .nav-tabs > li a {
-    width: 70px;
-    height: 70px;
-    margin: 20px auto;
-    border-radius: 100%;
+.wizard .nav-tabs > li a { 
     padding: 0;
 	border: 1px solid #ddd;
 	text-align: center;

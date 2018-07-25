@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    
+    <!-- Bootstrap CSS -->   
 	<link rel="stylesheet" href="library/css/font-awesome.min.css">
 	<link rel="stylesheet" href="library/css/style.css">
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
 	
     <title>Company Formation Page</title>
+	
+	<style>
+		.card-header{ padding: 0px; background-color: #0062cc; color: #fff;}
+		.card-header button{ color: #fff; }
+		.card-header button:hover, .card-header button:focus{ color: #fff; text-decoration: none;}
+		
+		.card-header:hover{background-color: #007bff; }
+	</style>
 	
   </head>
   <body>
@@ -28,22 +34,20 @@
 
                 <li role="presentation" class="nav-item">
                     <a href="#step1" class="nav-link active" data-toggle="tab" aria-controls="step1" role="tab" title="Fill up information">
-                            Step 1
-                        </a>
+                        Step 1
+                    </a>
                 </li>
 
                 <li role="presentation" class="nav-item">
                     <a href="#step2" class="nav-link" data-toggle="tab" aria-controls="step2" role="tab" title="Questionaire">
-                            Step 2
-                        </a>
+                        Step 2
+                    </a>
                 </li>
                 <li role="presentation" class="nav-item">
                     <a href="#step3" class="nav-link" data-toggle="tab" aria-controls="step3" role="tab" title="Completed">
-                            Step 3
-                        </a>
+                        Step 3
+                    </a>
                 </li>
-
-
             </ul>
 
             <form role="form">
@@ -141,9 +145,9 @@
 						<div class="accordion" id="accordionExample">
 						
 						  <!-- 1. Proposed Name of the Company -->	
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingOne">
-							  <h5 class="">
+							  <h5 class="mb-0">
 								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 								  1. Proposed Name of the Company
 								</button>
@@ -176,7 +180,7 @@
 						  </div>
 						  
 						  <!-- 2. Proposed Main Activities of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingTwo">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -223,7 +227,7 @@
 						  </div>
 						  
 						  <!-- 3. Authorised Capital of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingThree">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -258,7 +262,7 @@
 						  </div>
 						  
 						  <!-- 4. Proposed Shareholders of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingFour">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -288,156 +292,160 @@
 										</div>
 									</div>
 									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Shareholder 1</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline1">
-													<label class="custom-control-label" for="customControlInline1">Nominee</label>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-										</div>
-										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
-											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
-										</div>
-									</div>
+									<div id="shareholder-content">
 									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Shareholder 2</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline2">
-													<label class="custom-control-label" for="customControlInline2">Nominee</label>
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-shareholder-title">Shareholder <span>1</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 shareholder-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline1">
+														<label class="custom-control-label" for="customControlInline1">Nominee</label>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
 											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>
+												<div class="col-4">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Number of Shares</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
+												  </div>
+												</div>	
 											</div>
 										</div>
 										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-shareholder-title">Shareholder <span>2</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 shareholder-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline2">
+														<label class="custom-control-label" for="customControlInline2">Nominee</label>
+													</div>
+												</div>
 											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>
+												<div class="col-4">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Number of Shares</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
+												  </div>
+												</div>	
+											</div>
 										</div>
-									</div>
+										
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-shareholder-title">Shareholder <span>3</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 shareholder-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline3">
+														<label class="custom-control-label" for="customControlInline3">Nominee</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>
+												<div class="col-4">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Number of Shares</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
+												  </div>
+												</div>	
+											</div>
+										</div>
 									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Shareholder 3</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-shareholder-input" id="customControlInline3">
-													<label class="custom-control-label" for="customControlInline3">Nominee</label>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-										</div>
-										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
-											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
-										</div>
 									</div>
 									
 									<div class="row">
 										<div class="col-sm-12 text-right mt-1">
-											<button type="submit" class="btn btn-primary btn-sm my-1 add-shareholder-btn">Add Shareholder</button>
+											<a href="javascript:void(0)" class="btn btn-primary btn-sm my-1 add-shareholder-btn">Add Shareholder</a>
 										</div>
 									</div>
 								
@@ -446,7 +454,7 @@
 						  </div>
 
 						  <!-- 5. Proposed Directors of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingFive">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -475,156 +483,140 @@
 										</div>
 									</div>
 									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Director 1</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInline4">
-													<label class="custom-control-label" for="customControlInline4">Nominee</label>
+									<div id="directors-content">
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-director-title">Director <span>1</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 director-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInlineDirector1">
+														<label class="custom-control-label" for="customControlInlineDirector1">Nominee</label>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
 											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>	
 											</div>
 										</div>
 										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
-											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
-										</div>
-									</div>
-									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Director 2</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInline5">
-													<label class="custom-control-label" for="customControlInline5">Nominee</label>
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-director-title">Director <span>2</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 director-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInlineDirector2">
+														<label class="custom-control-label" for="customControlInlineDirector2">Nominee</label>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
 											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>	
 											</div>
 										</div>
 										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
-											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
-										</div>
-									</div>
-									
-									<div class="col-sm-12 border pt-2 mb-3">
-										<div class="row">
-											<div class="col-sm">
-												<h6>Director 3</h6>
-											</div>
-											<div class="col-sm text-right">
-												<div class="custom-control custom-checkbox my-1 mr-sm-2">
-													<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInline6">
-													<label class="custom-control-label" for="customControlInline6">Nominee</label>
+										<div class="col-sm-12 border pt-2 mb-3">
+											<div class="row">
+												<div class="col-sm">
+													<h6 class="item-director-title">Director <span>3</span></h6>
+												</div>
+												<div class="col-sm text-right">
+													<div class="custom-control custom-checkbox my-1 mr-sm-2 director-checkbox">
+														<input type="checkbox" class="custom-control-input nominees-director-input" id="customControlInlineDirector3">
+														<label class="custom-control-label" for="customControlInlineDirector3">Nominee</label>
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Name</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-											  </div>
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Name</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Nationailty</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Occupation</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
+												  </div>
+												</div>
 											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Nationailty</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
+											
+											<div class="row">
+												<div class="col-sm">
+												  <div class="form-group">
+													<label for="exampleInputPassword1">Address</label>
+													<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
+												  </div>
+												</div>	
 											</div>
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Occupation</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">
-											  </div>
-											</div>
-										</div>
-										
-										<div class="row">
-											<div class="col-sm">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Address</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">
-											  </div>
-											</div>
-											<div class="col-4">
-											  <div class="form-group">
-												<label for="exampleInputPassword1">Number of Shares</label>
-												<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">
-											  </div>
-											</div>	
 										</div>
 									</div>
 									
 									<div class="row">
 										<div class="col-sm-12 text-right mt-1">
-											<button type="submit" class="btn btn-primary btn-sm my-1 add-director-btn">Add Director</button>
+											<a href="javascript:void(0)" class="btn btn-primary btn-sm my-1 add-director-btn">Add Director</a>
 										</div>
 									</div>
 								
@@ -633,7 +625,7 @@
 						  </div>
 						  
 						  <!-- 6. Secretary of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingSix">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -677,7 +669,7 @@
 						  </div>
 						  
 						  <!-- 7. Registered Office of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingSeven">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -697,7 +689,7 @@
 						  
 						 
 						  <!-- 8. Vat/VIES Registration -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingEight">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
@@ -738,7 +730,7 @@
 						  </div>
 						  
 						  <!-- 9. Bank Accounts -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingNine">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
@@ -807,7 +799,7 @@
 						  </div>
 						  
 						  <!-- 10. Auditors -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingTen">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -825,7 +817,7 @@
 						  </div>
 						  
 						  <!-- 11. PLEASE SPECIFY ANY PARTICULAR REQUIREMENTS OR MATTERS WHICH SHOULD BE BROUGHT TO OUR ATTENTION AND WHICH ARE NOT COVERED ELSEWHERE IN THIS FORM -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingEleven">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
@@ -844,7 +836,7 @@
 						  
 						  
 						  <!-- 12. Maintenance and Management of the Company -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingTwelve">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
@@ -871,7 +863,7 @@
 						  </div>
 						  
 						  <!-- 13. Fee Schedule -->
-						  <div class="card mb-3">
+						  <div class="card">
 							<div class="card-header" id="headingThirteen">
 							  <h5 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
@@ -946,8 +938,501 @@
                     </div>
 					
                     <div class="tab-pane" role="tabpanel" id="step3">
-                        <h3>Step 3</h3>
-                        <p>Completed Info will generate here....</p>
+                        
+                        
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">Personal Details</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th width="15%">First Name</th>
+						  <td>John</td>	
+						  <th width="15%">Surname</th>
+						  <td>Doe</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Email Address</th>
+						  <td>john@test.com</td>	
+						  <th width="15%">Phone</th>
+						  <td>+12459876315</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+					  </tbody>
+					</table>
+
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="6">Billing Details</th>
+						</tr>
+					  </thead>
+					  <tbody>
+												
+						<tr>
+						  <th width="15%">Address Line 1</th>
+						  <td colspan="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address Line 2</th>
+						  <td colspan="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>		
+						  	
+						</tr>
+						
+						<tr>
+						  <th width="15%">Town</th>
+						  <td>Manila</td>	
+						  <th width="15%">Country</th>
+						  <td>Philippines</td>
+						  <th width="15%">Zipcode</th>
+						  <td>1760</td>	
+						</tr>											
+					  </tbody>
+					</table>
+
+					
+					<!-- 1. Proposed Name of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="2">1. Proposed Name of the Company</th>
+						</tr>
+					  </thead>	
+					  <tbody>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">1</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">2</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">3</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 2. Proposed Main Activities of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="2">2. Proposed Main Activities of the Company</th>
+						</tr>
+					  </thead>	
+					  <tbody>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">1</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">2</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">3</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">4</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">5</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+						<tr>
+						  <th width="10"><span class="align-middle mt-6">6</span></th>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>									  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 2. Proposed Main Activities of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="6">3. Authorised Capital of the Company</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th width="15%">Proposed authorised capital:</th>
+						  <td>&euro;100000</td>	
+						  <th width="15%">Proposed issued capital:</th>
+						  <td>&euro;100000</td>
+						  <th width="15%">Amount per share:</th>
+						  <td>&euro;00000</td>	
+						</tr>											
+					  </tbody>
+					</table>
+					
+					<!-- 4. Proposed Shareholders of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">4. Proposed Shareholders of the Company </th>
+						</tr>
+					  </thead>
+					  <tbody>
+					  
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Shareholder 1</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td>Architect</td>	
+						  <th width="15%">Number of Shares</th>
+						  <td>50%</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Shareholder 2</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td>Architect</td>	
+						  <th width="15%">Number of Shares</th>
+						  <td>50%</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Shareholder 3</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td>Architect</td>	
+						  <th width="15%">Number of Shares</th>
+						  <td>50%</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+					  </tbody>
+					</table>
+					
+					<!-- 5. Proposed Directors of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">5. Proposed Directors of the Company </th>
+						</tr>
+					  </thead>
+					  <tbody>
+					  
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Director 1</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td colspan="3">Architect</td>							  							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Director 2</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td colspan="3">Architect</td>							  							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+						<tr class="thead-light">
+						  <th scope="col" colspan="4">Director 3</th>
+						</tr>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationality</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td colspan="3">Architect</td>							  							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+					  </tbody>
+					</table>
+					
+					<!-- 6. Secretary of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">6. Secretary of the Company </th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th width="15%">Name</th>
+						  <td>John Doe</td>	
+						  <th width="15%">Nationailty</th>
+						  <td>Lorem Ipsum</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Occupation</th>
+						  <td colspan="3">Architect</td>							  							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 7. Registered Office of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">7. Registered Office of the Company </th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 8. VAT/VIES Registration  -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">8. VAT/VIES Registration</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td><span class="btn btn-outline-primary btn-sm">Yes</span> </td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+									
+					<!-- 9. Bank Accounts -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">9. Bank Accounts</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th width="15%">Bank</th>
+						  <td>Bank Name</td>	
+						  <th width="15%">Joint or Several</th>
+						  <td>authorised signature</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Authorised signatory/(ies)</th>
+						  <td>authorised signature</td>	
+						  <th width="15%">Currency</th>
+						  <td>&euro;</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Type of account required</th>
+						  <td>authorised signature</td>	
+						  <th width="15%">Expected yearly turnover</th>
+						  <td>2018</td>							  
+						</tr>
+						
+						<tr>
+						  <th width="15%">Address</th>
+						  <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </td>							  							  
+						</tr>
+						
+					  </tbody>
+					</table>
+					
+					<!-- 10. Registered Office of the Company -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">10. Auditors</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>The Company’s financial statements must be audited by auditors authorised by the Minister of Finance to conduct audits. MANTIS & ATHINODOROU LLC can effect an introduction to qualified auditors.</td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 11. Please specify any particular requirements or matters which should be brought to our attention and which are not covered elsewhere in this form. -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">11. Please specify any particular requirements or matters which should be brought to our attention and which are not covered elsewhere in this form.</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
+					<!-- 12. Maintenance and Management of the Company  -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">12. Maintenance and Management of the Company</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>
+							<em>If required MANTIS &amp; ATHINODOROU LLC can provide, either directly or through our associated companies, full domiciliation services including:</em>
+							  
+							<ul>
+								<li>Registered office address</li>
+								<li>Company Secretary</li>
+								<li>Directors</li>
+								<li>Alternate directors</li>
+								<li>Nominee shareholders</li>
+								<li>Legal advice and assistance/trustee services</li>
+							</ul>
+						  </td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
+					
+					<!-- 13. Fee Schedule -->
+					<table class="table table-bordered">
+					  <thead class="bg-primary text-light">
+						<tr>
+						  <th scope="col" colspan="4">13. Fee Schedule</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>
+								
+								<table class="table table-bordered mb-0">
+									  <thead class="thead-light">
+										<tr>
+										  <th scope="col">Description  of Service</th>
+										  <th scope="col">Cost/Fees</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Registration of a Cyprus Company, Drafting of Memorandum and Articles of Association, Submission of all relevant applications to the Office of the Registrar of Companies of the Republic, Receipt of Corporate Documents and Certificates, Appointment of Board of Directors and Secretary, Appointment of Shareholders, Preparation of all relevant Documentation  based on a €1.000 share capital.</td>
+										  <td>€1,500.00</td>
+										</tr>
+										<tr>
+										  <td>Annual Representation Fees for each Cyprus company, including the provision of the registered address, and Secretary if necessary.</td>
+										  <td>€500.00</td>
+										</tr>
+										<tr>
+										  <td>Annual Representation fees for each Cyprus company with respect to the provision of a Board of Directors with Cyprus residents (juridical person).</td>
+										  <td>€300.00</td>
+										</tr>
+										<tr>
+										  <td>Annual fees for the appointment of a nominee shareholder (juridical person)</td>
+										  <td>€300.00</td>
+										</tr>
+										<tr>
+										  <td>Opening of Bank accounts with a Cyprus based Bank (per account)</td>
+										  <td>€100.00</td>
+										</tr>
+										<tr>
+										  <td>Registration of the company with the Cyprus Tax Authorities (Tax I.C. No.)  [NOTE: this does not include the issuance of a Tax Residence Certificate for which there is an extra cost of aprox. €500]</td>
+										  <td>€250.00</td>
+										</tr>
+										<tr>
+										  <td>Registration of the company with the VAT Authorities (VAT No.)</td>
+										  <td>€250.00</td>
+										</tr>
+										<tr>
+										  <td>Provision of services of signatory to bank account  including liaising with bankers regarding transfers, payments etc</td>
+										  <td>€100.00</td>
+										</tr>
+									  </tbody>
+								</table>
+								
+						  </td>							  							  
+						</tr>
+					  </tbody>
+					</table>
+					
                         <ul class="list-inline pull-right">
                             <li class="list-inline-item">
                                 <button type="button" class="btn btn-default prev-step">Previous</button>
@@ -956,6 +1441,7 @@
                                 <button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button>
                             </li>
                         </ul>
+						
                     </div>
 
                     <div class="clearfix"></div>
