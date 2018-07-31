@@ -36,7 +36,7 @@
 
 .wizard .nav-tabs .nav-item.show .nav-link, .wizard .nav-tabs .nav-link.active{
 	color: #fff;
-    background-color: #0062cc;
+    background-color: #343a40;
 }
 
 
@@ -72,7 +72,7 @@ span.round-tab:hover {
 }
 
 .wizard .nav-tabs > li {
-    width: 33.333333%;
+    width: 20%;
 }
 
 .wizard li:after {
@@ -104,7 +104,8 @@ span.round-tab:hover {
 	text-align: center;
 	font-size: 16px;
 	font-weight: bold;
-	line-height: 65px;
+	line-height: 45px;
+	color: #343a40;
 }
 
 .wizard .nav-tabs > li a:hover {
@@ -119,6 +120,16 @@ span.round-tab:hover {
 .wizard h3 {
     margin-top: 0;
 }
+
+.card-header{ padding: 0px!important; background-color: #6c757d!important; color: #fff;}
+.card-header a{ color: #fff; display:block; padding: 10px;}
+.card-header a:hover, .card-header a:focus{ color: #fff; text-decoration: none;}
+.card-header:hover{background-color: #6c757d!important; }
+
+.package-content-list{ font-size: 14px; text-align:left;}
+.package-content-list{ position:relative;}
+
+.checkout-basket{ height: 100%; padding: 10px;}
 
 @media( max-width : 585px ) {
 
@@ -137,7 +148,6 @@ span.round-tab:hover {
     .wizard .nav-tabs > li a {
         width: 50px;
         height: 50px;
-        line-height: 50px;
     }
 
     .wizard li.active:after {

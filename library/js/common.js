@@ -4,7 +4,8 @@ $(document).ready(function(){
 		if($('#nomineeShareHolder').is(':checked')) { 
 			$('.nominees-shareholder-input').prop('disabled', true);
 			$('.nominees-shareholder-input').parents('.custom-checkbox').hide();
-			$('.add-shareholder-btn').hide();
+			$('.add-shareholder-btn').hide();			
+			$('.shareholderName, .shareholderNationality, .shareholderOccupation, .shareholderAddress').prop('disabled', true);
 		} else {
 			$('.nominees-input').prop('disabled', false);
 			$('.nominees-input').parents('.custom-checkbox').show();
@@ -17,6 +18,7 @@ $(document).ready(function(){
 			$('.nominees-shareholder-input').prop('disabled', false);
 			$('.nominees-shareholder-input').parents('.custom-checkbox').show();
 			$('.add-shareholder-btn').show();
+			$('.shareholderName, .shareholderNationality, .shareholderOccupation, .shareholderAddress').prop('disabled', false);
 		} else {
 			$('.nominees-shareholder-input').prop('disabled', true);
 			$('.nominees-shareholder-input').parents('.custom-checkbox').hide();
@@ -29,6 +31,7 @@ $(document).ready(function(){
 			$('.nominees-director-input').prop('disabled', true);
 			$('.nominees-director-input').parents('.custom-checkbox').hide();
 			$('.add-director-btn').hide();
+			$('.directorName, .directorNationality, .directorOccupation, .directorAddress').prop('disabled', true);
 		} else {
 			$('.nominees-director-input').prop('disabled', false);
 			$('.nominees-director-input').parents('.custom-checkbox').show();
@@ -38,12 +41,13 @@ $(document).ready(function(){
 	
 	$('#selectDirector').click(function() {
 		if($('#selectDirector').is(':checked')) { 
-			$('.nominees-director-input').prop('disabled', true);
-			$('.nominees-director-input').parents('.custom-checkbox').hide();
-			$('.add-director-btn').show();
-		} else {
 			$('.nominees-director-input').prop('disabled', false);
 			$('.nominees-director-input').parents('.custom-checkbox').show();
+			$('.add-director-btn').show();
+			$('.directorName, .directorNationality, .directorOccupation, .directorAddress').prop('disabled', false);
+		} else {
+			$('.nominees-director-input').prop('disabled', true);
+			$('.nominees-director-input').parents('.custom-checkbox').hide();
 			$('.add-director-btn').hide();
 		}
 	});
@@ -67,19 +71,19 @@ $(document).ready(function(){
 			shareHolderStr += '<div class="col-sm">',
 			  shareHolderStr += '<div class="form-group">',
 				shareHolderStr += '<label for="exampleInputPassword1">Name</label>',
-				shareHolderStr += '<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">',
+				shareHolderStr += '<input type="text" class="form-control shareholderName" id="exampleInputPassword1" placeholder="Name">',
 			  shareHolderStr += '</div>',
 			shareHolderStr += '</div>',
 			shareHolderStr += '<div class="col-sm">',
 			  shareHolderStr += '<div class="form-group">',
-				shareHolderStr += '<label for="exampleInputPassword1">Nationailty</label>',
-				shareHolderStr += '<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">',
+				shareHolderStr += '<label for="exampleInputPassword1">Nationality</label>',
+				shareHolderStr += '<input type="text" class="form-control shareholderNationality" id="exampleInputPassword1" placeholder="Nationality">',
 			  shareHolderStr += '</div>',
 			shareHolderStr += '</div>',
 			shareHolderStr += '<div class="col-sm">',
 			  shareHolderStr += '<div class="form-group">',
 				shareHolderStr += '<label for="exampleInputPassword1">Occupation</label>',
-				shareHolderStr += '<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nationality">',
+				shareHolderStr += '<input type="text" class="form-control shareholderOccupation" id="exampleInputPassword1" placeholder="Occupation">',
 			  shareHolderStr += '</div>',
 			shareHolderStr += '</div>',
 		shareHolderStr += '</div>',
@@ -88,13 +92,13 @@ $(document).ready(function(){
 			shareHolderStr += '<div class="col-sm">',
 			  shareHolderStr += '<div class="form-group">',
 				shareHolderStr += '<label for="exampleInputPassword1">Address</label>',
-				shareHolderStr += '<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Address">',
+				shareHolderStr += '<input type="text" class="form-control shareholderAddress" id="exampleInputPassword1" placeholder="Address">',
 			  shareHolderStr += '</div>',
 			shareHolderStr += '</div>',
 			shareHolderStr += '<div class="col-4">',
 			  shareHolderStr += '<div class="form-group">',
 				shareHolderStr += '<label for="exampleInputPassword1">Number of Shares</label>',
-				shareHolderStr += '<input type="text" class="form-control" id="exampleInputPassword1" placeholder="No. of Shares">',
+				shareHolderStr += '<input type="text" class="form-control shareholderNoShares" id="exampleInputPassword1" placeholder="No. of Shares">',
 			  shareHolderStr += '</div>',
 			shareHolderStr += '</div>',	
 		shareHolderStr += '</div>',
