@@ -128,6 +128,17 @@ span.round-tab:hover {
 
 .package-content-list{ font-size: 14px; text-align:left;}
 .package-content-list{ position:relative;}
+.package-content-list li{ position:relative; margin-left: 25px;}
+.package-content-list li:before {
+    content: "\f00c";
+    width: 15px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    color: #28a745;
+}
 
 .checkout-basket{ height: 100%; padding: 10px;}
 
