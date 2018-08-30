@@ -67,7 +67,7 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div class="col-md-10 col-lg-12 mx-auto">
           <h3 class="mb-3 p-0">CYPRUS COMPANY FORMATION SERVICE</h3>
           <h6 class="mb-2">Fast & Bespoke Cyprus Company Formation services from leading law offices.</h6>
 		  
@@ -80,43 +80,28 @@
           </div>
 
 		    <em>If required OUR LEGAL PARTNERS can provide, either directly or through our associated companies, full domiciliation services including:</em>
-			<br />					
-			<ul class="text-left mt-3 mb-4" style="margin: 0 auto; display: inline-block; ">
-				<li>Registered office address</li>
-				<li>Company Secretary</li>
-				<li>Directors</li>
-				<li>Alternate directors</li>
-				<li>Nominee shareholders</li>
-				<li>Legal advice and assistance/trustee services</li>
-			</ul>
+			<br />
+			
+			<div class="row mt-3 text-left">
 
-          <form action="javascript:search();" method="post">
-            <div class="input-group">
-              <input type="search" id="search" autocomplete="off" name="search" class="form-control" placeholder="Enter the name of a Cyprus Company" onkeyup="liveSearch(this.value);" onblur="onBlur();">              <span class="input-group-btn" id="btn-clear" style="display: none;">
-                <button type="button" class="btn " style="background: #fff;color: lightgrey" onclick="clearx();"><i class="fa fa-close "></i></button>
-                </span>
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                </span>
-            </div>
-            <div style="z-index: 9999; position: absolute; width: 89.5%; display: none;" id="resSearch">
+				<div class="col-md-4">
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Registered office address</p>
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Company Secretary</p>
+				</div>
 
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4  ml-auto mr-auto">
-                  <input class="form-check-input" type="radio" value="1" name="radiogroup" checked=""> 
-                  <label style="padding-left: 0;" class="form-check-label">Companies</label>
-                </div>
+				<div class="col-md-4">
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Directors</p>
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Alternate directors</p>
+				</div>
 
-                <div class="col-md-4  ml-auto mr-auto">
-                  <input class="form-check-input" type="radio" value="2" name="radiogroup"> 
-                  <label style="padding-left: 0;" class="form-check-label">Officials</label>
-                </div>
-              </div>
+				<div class="col-md-4">
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Nominee shareholders</p>
+						<p><i class="fa fa-chevron-right" aria-hidden="true"></i> Legal advice and assistance/trustee services</p>
+				</div>
 
-          </form>
-
-          <p class="mt-5">
+			</div>
+      
+          <p class="">
             Use our easy company formation wizard and order one of our pre-selected company formation packages OR completely customise. Get a cyprus company at a favourable tax and legal jurisdiction to conduct your local or international business. We can help you open bank accounts and also for enchanced privacy opt for Nominee directors and Shareholders
           </p>
         </div>
@@ -275,9 +260,9 @@
 						
 					</div>
 				
-                    <div class="tab-pane" role="tabpanel" id="step2">
+          <div class="tab-pane" role="tabpanel" id="step2">
 					
-                        <h5>Personal Information</h5>
+              <h5>Personal Information</h5>
                        
 						  <div class="row">							
 							<div class="col-sm">
@@ -510,9 +495,10 @@
 										</div>
 									</div>
 									
-									<div id="shareholder-content">
-									
-										<div class="col-sm-12 border pt-2 mb-3">
+									<div id="shareholder-content" class="position-relative">
+										
+										<div class="col-sm-12 border pt-2 mb-4 shareholder-item">
+											
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-shareholder-title">Shareholder <span>1</span></h6>
@@ -561,7 +547,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-12 border pt-2 mb-3">
+										<div class="col-sm-12 border pt-2 mb-3 shareholder-item">
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-shareholder-title">Shareholder <span>2</span></h6>
@@ -610,7 +596,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-12 border pt-2 mb-3">
+										<div class="col-sm-12 border pt-2 mb-3 shareholder-item">
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-shareholder-title">Shareholder <span>3</span></h6>
@@ -700,7 +686,7 @@
 									</div>
 									
 									<div id="directors-content">
-										<div class="col-sm-12 border pt-2 mb-3">
+										<div class="directors-item col-sm-12 border pt-2 mb-3">
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-director-title">Director <span>1</span></h6>
@@ -743,7 +729,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-12 border pt-2 mb-3">
+										<div class="directors-item col-sm-12 border pt-2 mb-3">
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-director-title">Director <span>2</span></h6>
@@ -786,7 +772,7 @@
 											</div>
 										</div>
 										
-										<div class="col-sm-12 border pt-2 mb-3">
+										<div class="directors-item col-sm-12 border pt-2 mb-3">
 											<div class="row">
 												<div class="col-sm">
 													<h6 class="item-director-title">Director <span>3</span></h6>
