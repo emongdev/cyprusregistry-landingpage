@@ -150,7 +150,16 @@ span.round-tab:hover {
     background: #f74b51;
 }
 
-.formation-page-title{ margin-top: -30px; color: #343a40; }
+.landingpage-head.masthead {
+    position: relative;
+    background: url(../images/bg-masthead-landing.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem
+}
 
 @media( max-width : 585px ) {
 
