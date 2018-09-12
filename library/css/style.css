@@ -150,6 +150,8 @@ span.round-tab:hover {
     background: #f74b51;
 }
 
+.formation-page-title{ margin-top: -30px; color: #343a40; }
+
 @media( max-width : 585px ) {
 
     .wizard {
