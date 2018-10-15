@@ -152,7 +152,17 @@ $(document).ready(function(){
 		directorStr += '</div>',
 	directorStr += '</div>';
 	
+	var addressStr = "";
+	
+	addressStr += '<div class="address-item mb-3 position-relative parent-container">',
+		addressStr += '<span class="remove-item"><i class="fa fa-times" aria-hidden="true"></i></span>',
+		addressStr += '<div class="form-group">',
+			addressStr += '<label class="address-label">Address <span></span></label>',
+			addressStr += '<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>',
+		addressStr += '</div>',
+	addressStr += '</div>';
 
+	/* Add Shareholder */
 	$('.add-shareholder-btn').click(function(){
 		$('#shareholder-content').after(shareHolderStr);	
 	
@@ -178,7 +188,7 @@ $(document).ready(function(){
 		
 	});
 	
-	
+	/* Add Director */
 	$('.add-director-btn').click(function(){
 		$('#directors-content').after(directorStr);	
 		
@@ -195,6 +205,7 @@ $(document).ready(function(){
 		$(".director-checkbox").each(function(i) {
 			$(this).find("label").attr('for', 'customControlInlineDirector' + ++i);
 		});
+
 		
 		var itemCounter = $('.directors-item').length; 		
 		if(itemCounter == 10){
@@ -202,44 +213,63 @@ $(document).ready(function(){
 		}
 
 	});
+	
+	$('.add-address-btn').click(function(){
+		$('#address-content').after(addressStr);
+		
+		$(".address-label").each(function(i) {
+			$(this).find("span").text(++i);
+		});
+		
+		var itemCounter = $('.address-item').length; 		
+		if(itemCounter == 10){
+			$(this).hide();
+		}
+		
+	});
 
 	/* Remove Item */
 	$(document).on('click', '.remove-item', function(){
-			$(this).parents('.parent-container').detach();
+		$(this).parents('.parent-container').detach();
 
-			$("h6.item-shareholder-title").each(function(i) {
-				$(this).find("span").text(++i);
-			});
+		$("h6.item-shareholder-title").each(function(i) {
+			$(this).find("span").text(++i);
+		});
 
-			/* Nominees Counter */
-			$(".shareholder-checkbox").each(function(i) {
-				$(this).find("input").attr('id', 'customControlInline' + ++i);
-			});
-			
-			$(".shareholder-checkbox").each(function(i) {
-				$(this).find("label").attr('for', 'customControlInline' + ++i);
-			});
+		/* Nominees Counter */
+		$(".shareholder-checkbox").each(function(i) {
+			$(this).find("input").attr('id', 'customControlInline' + ++i);
+		});
+		
+		$(".shareholder-checkbox").each(function(i) {
+			$(this).find("label").attr('for', 'customControlInline' + ++i);
+		});
 
-			/* Nominees Counter */
-			$(".director-checkbox").each(function(i) {
-				$(this).find("input").attr('id', 'customControlInlineDirector' + ++i);
-			});
-			
-			$(".director-checkbox").each(function(i) {
-				$(this).find("label").attr('for', 'customControlInlineDirector' + ++i);
-			});
+		/* Nominees Counter */
+		$(".director-checkbox").each(function(i) {
+			$(this).find("input").attr('id', 'customControlInlineDirector' + ++i);
+		});
+		
+		$(".director-checkbox").each(function(i) {
+			$(this).find("label").attr('for', 'customControlInlineDirector' + ++i);
+		});
 
-			/* Show add button when items are lower than 10*/	
-			var shareholderItemCounter = $('.shareholder-item').length; 		
-			var directorItemCounter = $('.directors-item').length;
+		/* Show add button when items are lower than 10*/	
+		var shareholderItemCounter = $('.shareholder-item').length; 		
+		var directorItemCounter = $('.directors-item').length;
+		var addressItemCounter = $('.address-item').length;
 
-			if(shareholderItemCounter <= 9){
-				$('.add-shareholder-btn').show();
-			}
+		if(shareholderItemCounter <= 9){
+			$('.add-shareholder-btn').show();
+		}
 
-			if(directorItemCounter <= 9){
-				$('.add-director-btn').show();
-			}
+		if(directorItemCounter <= 9){
+			$('.add-director-btn').show();
+		}
+		
+		if(addressItemCounter <= 9){
+			$('.add-address-btn').show();
+		}
 
 	});
 	

@@ -150,6 +150,8 @@ span.round-tab:hover {
     background: #f74b51;
 }
 
+.address-item .remove-item{ top: 20px;}
+
 .landingpage-head.masthead {
     position: relative;
     background: url(../images/bg-masthead-landing.jpg) center center no-repeat;
